@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 from statsmodels.tsa.arima.model import ARIMA
 from sklearn.metrics import mean_squared_error
+import matplotlib
+matplotlib.use('Agg')  # Use a non-interactive backend
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 import math, random
@@ -24,7 +26,6 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
 
 app = Flask(__name__)
 
